@@ -1,4 +1,94 @@
-# Interactive Priority Queue for Task Scheduling
+# Assignment 4: Sorting and Priority Queue Implementation
+
+This repository contains two distinct projects:
+1. **Heapsort Implementation and Analysis**: A comparative study of sorting algorithms
+2. **Interactive Priority Queue**: A task scheduler using binary heap implementation
+
+## 📁 Project Files
+
+| File | Description |
+|------|-------------|
+| `assignment4_p1.py` | Main script for Heapsort implementation and analysis |
+| `assignment4_p2.py` | Priority Queue implementation using binary heap |
+| `requirements.txt` | Python package dependencies |
+| `assignment4_p1.pdf` | Analysis Document for Part 1 (Heapsort) |
+| `assignment4_p2.pdf` | Analysis Document for Part 2 (Priority Queue) |
+| `assignment4.png` | Visualization of sorting algorithm performance |
+| `Readme.md` | Project documentation |
+
+---
+
+# Project 1: Heapsort Implementation and Analysis
+
+This project provides an implementation of the Heapsort algorithm and empirically compares its performance against Quicksort and Mergesort.
+
+The goal is to analyze the efficiency of these algorithms across different input sizes and data distributions (random, sorted, and reverse-sorted) and to visualize the results.
+
+## 📂 Key Features
+
+- **Heapsort Implementation**: A clear and efficient implementation of the Heapsort algorithm using an array to represent the heap.
+- **Comparative Analysis**: The script runs all three sorting algorithms on identical datasets to provide a fair performance comparison.
+- **Data Visualization**: Automatically generates plots to visually represent the running times of the algorithms, making it easy to understand their performance characteristics.
+- **Multiple Data Distributions**: Tests algorithms on random, sorted, and reverse-sorted arrays to highlight best-case, average-case, and worst-case scenarios.
+
+## 🚀 How to Run
+
+Set up the environment:
+
+```bash
+# Create and activate a virtual environment
+python -m venv venv
+source venv/bin/activate  # On Windows use: venv\Scripts\activate
+
+# Install dependencies
+pip install -r requirements.txt
+```
+
+Run the analysis script:
+
+```bash
+python assignment4_p1.py
+```
+
+The script will print the timing results to the console and then display a series of plots comparing the algorithms' performance.
+
+## 📋 Example Performance Results
+
+Below is the sample output from running the analysis script.
+
+### Random Arrays
+```
+Size: 100   | Heapsort: 0.00026s | Quicksort: 0.00015s | Mergesort: 0.00023s
+Size: 500   | Heapsort: 0.00176s | Quicksort: 0.00084s | Mergesort: 0.00174s
+Size: 1000  | Heapsort: 0.00640s | Quicksort: 0.00218s | Mergesort: 0.00298s
+Size: 2500  | Heapsort: 0.01459s | Quicksort: 0.00565s | Mergesort: 0.00927s
+Size: 5000  | Heapsort: 0.03389s | Quicksort: 0.01811s | Mergesort: 0.02017s
+Size: 7500  | Heapsort: 0.04549s | Quicksort: 0.01862s | Mergesort: 0.03260s
+```
+
+### Sorted Arrays
+```
+Size: 100   | Heapsort: 0.00026s | Quicksort: 0.00092s | Mergesort: 0.00020s
+Size: 500   | Heapsort: 0.00195s | Quicksort: 0.02019s | Mergesort: 0.00111s
+Size: 1000  | Heapsort: 0.00647s | Quicksort: 0.08136s | Mergesort: 0.00249s
+Size: 2500  | Heapsort: 0.01275s | Quicksort: 0.32479s | Mergesort: 0.00416s
+Size: 5000  | Heapsort: 0.01642s | Quicksort: 1.40167s | Mergesort: 0.01747s
+Size: 7500  | Heapsort: 0.05194s | Quicksort: 3.02286s | Mergesort: 0.02548s
+```
+
+### Reverse Sorted Arrays
+```
+Size: 100   | Heapsort: 0.00015s | Quicksort: 0.00039s | Mergesort: 0.00012s
+Size: 500   | Heapsort: 0.00096s | Quicksort: 0.01323s | Mergesort: 0.00335s
+Size: 1000  | Heapsort: 0.00253s | Quicksort: 0.04896s | Mergesort: 0.00151s
+Size: 2500  | Heapsort: 0.00876s | Quicksort: 0.34985s | Mergesort: 0.00823s
+Size: 5000  | Heapsort: 0.02781s | Quicksort: 1.16925s | Mergesort: 0.01790s
+Size: 7500  | Heapsort: 0.04251s | Quicksort: 2.29813s | Mergesort: 0.01499s
+```
+
+---
+
+# Project 2: Interactive Priority Queue for Task Scheduling
 
 This project is an interactive command-line application that implements a Priority Queue using a binary heap. It's designed to simulate a simple task scheduler where tasks are processed based on their assigned priority.
 
@@ -17,11 +107,12 @@ The implementation uses a min-heap, meaning tasks with a lower priority number a
 
 This script is self-contained and does not require any external libraries beyond standard Python.
 
-1. Run from your terminal:
+1. Save the code as a Python file (e.g., `assignment4_part2.py`)
+2. Run from your terminal:
    ```bash
-   python assignment4_p2.py
+   python assignment4_part2.py
    ```
-2. Interact with the scheduler using the on-screen menu.
+3. Interact with the scheduler using the on-screen menu.
 
 ## 📋 Example Usage
 
